@@ -18,10 +18,10 @@
     "access": "public"
   },
   "dependencies": {
+    "@jsnotebook-z/local-client": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "http-proxy-middleware": "^3.0.2",
-    "@jsnotebook-z/local-client": "^0.1.0"
+    "http-proxy-middleware": "^3.0.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
