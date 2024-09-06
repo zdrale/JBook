@@ -1,0 +1,29 @@
+{
+  "name": "jsnotebook-z",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV='production' --external:node:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "bin": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@jsnotebook-z/local-client": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "esbuild": "0.8.26",
+    "typescript": "^5.5.4",
+    "@jsnotebook-z/local-api": "^1.0.0",
+    "commander": "^12.1.0"
+  }
+}

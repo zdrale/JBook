@@ -1,0 +1,30 @@
+{
+  "name": "@jsnotebook-z/local-api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.2",
+    "@jsnotebook-z/local-client": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21"
+  }
+}
