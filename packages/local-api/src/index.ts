@@ -11,8 +11,12 @@ export const serve = (port: number, filename: string, dir: string, useProxy: boo
   if (useProxy) {
     //use when actively developing app on local machine
     app.use(createProxyMiddleware({
-      target: 'http://127.0.0.1:3000',
+      target: "http://127.0.0.1:3000/",
       ws: true,
+      changeOrigin: true,
+      headers: {
+        Connection: "keep-alive",
+      },
     }))
   } else {
     //use when running on users machine
@@ -23,8 +27,7 @@ export const serve = (port: number, filename: string, dir: string, useProxy: boo
 
 
   return new Promise<void>((resolve, reject) => {
-    app.listen(port, resolve).on('error', reject);
-  })
+    app.listen(port, "0.0.0.0", resolve).on("error", reject);
+  });
 }
-
 
