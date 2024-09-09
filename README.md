@@ -35,9 +35,9 @@ This is a web application built using React.js. It is an interactive coding envi
 
 👉 **Uses unpkg**: It uses unpkg to load esbuild-wasm directly from CDN without needing to host it.
 
-👉 **Takes advanteg of esbuild**: Also it uses esbuild an extremely fast JavaScript and TypeScript bundler and minifier written in Go. It’s used to bundle, transform, and optimize JavaScript/TypeScript code and other resources (like CSS) for web development.
+👉 **Takes advantage of esbuild**: Also it uses esbuild an extremely fast JavaScript and TypeScript bundler and minifier written in Go. It’s used to bundle, transform, and optimize JavaScript/TypeScript code and other resources (like CSS) for web development.
 
-👉 **Every cell in application can share variables**: Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
+👉 **Every cell in application can share variables**: Declare variable in one cell and use it anywhere in document.
 
 👉 **Built it show function**: You can show any React component, string, number, or anything else by calling built in show() function.
 
