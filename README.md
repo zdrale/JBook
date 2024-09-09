@@ -4,8 +4,9 @@
 
   </div>
 
-  <h3 align="center">JBook</h3>
 </div>
+
+<h3 align="center">JBook</h3>
 
 ## 📋 <a name="table">Table of Contents</a>
 
